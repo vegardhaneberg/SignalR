@@ -1,0 +1,27 @@
+@page
+@model SignalRBackend.Pages.CreateNotification
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    <div class="form-group">
+        <form method="post">
+            <input type="text" name="notificationRequest.User"/>
+            
+            <input type="text" name="notificationRequest.Message"/>
+            @* <span asp-validation-for="notificationRequest.Message"></span> *@
+            <input type="submit"/>
+        </form>
+    </div>
+</div>
+</body>
+</html>
